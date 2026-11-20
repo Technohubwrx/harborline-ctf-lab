@@ -115,7 +115,7 @@ Reloading replaces the challenges and clears their old solves.
 
 ## Downloads
 
-- **Clean Ubuntu base image (OVA):** `<<ADD YOUR GOOGLE DRIVE LINK HERE>>`
+- **Clean Ubuntu base image (OVA):** [Google Drive](https://drive.google.com/drive/folders/1mg_gSABh3vBghZXd87VCGwZmH70J91u7?usp=sharing)
   Login: `srvadm` / `srvadm` -- change the password immediately.
   This is a build base for educators, **not** the student CTF box.
 
