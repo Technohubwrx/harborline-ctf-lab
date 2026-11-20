@@ -1,0 +1,20 @@
+[
+  {"name": "Lighthouse", "category": "Recon", "value": 50, "requires": [],
+   "description": "Harborline's public website went live in a hurry. Find what the developers left behind.\n\nTarget: the Harborline VM.",
+   "hint": "Developers sometimes leave notes where browsers don't display them.", "hint_cost": 10},
+  {"name": "Welcome Aboard", "category": "Recon", "value": 75, "requires": [],
+   "description": "New staff get a welcome pack. Can you get one too?",
+   "hint": "Not every service needs a password. Scan all common ports.", "hint_cost": 15},
+  {"name": "Manifest Desk", "category": "Initial Access", "value": 100, "requires": ["Welcome Aboard"],
+   "description": "Get into the staff portal.",
+   "hint": "Combine who works here with how their first password is made.", "hint_cost": 20},
+  {"name": "Cargo Hold", "category": "Initial Access", "value": 150, "requires": ["Manifest Desk"],
+   "description": "Turn portal access into a shell on the server. The flag is in /var/www.",
+   "hint": "A blocklist only stops what its author thought of.", "hint_cost": 30},
+  {"name": "Crew Quarters", "category": "Lateral Movement", "value": 175, "requires": ["Cargo Hold"],
+   "description": "Become a real user on the box. Submit user.txt.",
+   "hint": "Web apps need credentials to reach their database. People reuse them.", "hint_cost": 35},
+  {"name": "Captain's Log", "category": "Privilege Escalation", "value": 250, "requires": ["Crew Quarters"],
+   "description": "Take the helm. Submit root.txt.",
+   "hint": "Something runs on a schedule. Check who can change it.", "hint_cost": 50}
+]

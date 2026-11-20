@@ -1,0 +1,19 @@
+# Never commit the answer key
+harborline_flags.json
+flags.json
+
+# VM images and snapshots do not belong in git (use a Release or external host)
+*.ova
+*.ovf
+*.vmdk
+*.vdi
+*.vbox
+*.iso
+
+# Python
+__pycache__/
+*.pyc
+
+# Editor / OS cruft
+*.swp
+.DS_Store
